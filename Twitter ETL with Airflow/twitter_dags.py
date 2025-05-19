@@ -38,7 +38,7 @@ def run_twitter_etl():
 
     # Save DataFrame to S3
     df = pd.DataFrame(tweet_list)
-    df.to_csv('s3://data-bucket/elonmusk_tweets.csv', index=False)
+    df.to_csv('s3://data-bucket/test.csv', index=False)
 
 # Define default arguments for the DAG
 default_args = {
